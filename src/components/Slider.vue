@@ -2,12 +2,24 @@
   <swiper
     :modules="modules"
     :pagination="{ clickable: true }"
-    :slides-per-view="2"
-    :space-between="50"
     :autoplay="{
       delay: 2500,
     }"
     :loop="true"
+    :breakpoints="{
+      '640': {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      '768': {
+        slidesPerView:2,
+        spaceBetween: 40,
+      },
+      '1024': {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+    }"
     class="slider"
   >
     <swiper-slide>
