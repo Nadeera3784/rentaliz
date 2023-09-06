@@ -4,7 +4,10 @@
     :pagination="{ clickable: true }"
     :slides-per-view="2"
     :space-between="50"
-    @swiper="onSwiper"
+    :autoplay="{
+      delay: 2500,
+    }"
+    :loop="true"
     class="slider"
   >
     <swiper-slide>
@@ -102,10 +105,8 @@
   </swiper>
 </template>
 <script>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
-import {Pagination} from 'swiper/modules';
-// Import Swiper styles
+import {Pagination, Autoplay} from 'swiper/modules';
 import "swiper/css";
 import 'swiper/css/pagination';
 
@@ -115,12 +116,8 @@ export default {
     SwiperSlide,
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
     return {
-      onSwiper,
-      modules: [Pagination],
+      modules: [Pagination, Autoplay],
     };
   },
 };

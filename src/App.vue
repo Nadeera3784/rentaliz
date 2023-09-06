@@ -1,29 +1,46 @@
 <template>
   <div class="hero">
-    <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 fw-bold container"
-    >
-      <div class="col-md-3 mb-2 mb-md-0 justify-content-start">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="https://don.finding.lk/images/rentalize_logo.png" width="140" />
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent fw-bold">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img
+            src="https://don.finding.lk/images/rentalize_logo.png"
+            width="140"
+            alt="Logo"
+          />
         </a>
+          <button class="navbar-toggler" type="button" @click="toggleMobileNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         <transition name="fade">
+          <div :class="{ collapse: !isMobileNavOpen, 'navbar-collapse': true }">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#whyus">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#price">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#feedback">Feedback</a>
+              </li>
+            </ul>
+            <div class="navbar-text">
+              <button type="button" class="btn me-2 text-theme">Login</button>
+              <button type="button" class="btn btn-primary rounded-pill">
+                Sign up - It’s Free
+              </button>
+            </div>
+          </div>
+         </transition>
       </div>
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-4">Home</a></li>
-        <li><a href="#features" class="nav-link px-4" v-smooth-scroll>Features</a></li>
-        <li><a href="#whyus" class="nav-link px-4" v-smooth-scroll>Why Us</a></li>
-        <li><a href="#price" class="nav-link px-4" v-smooth-scroll>Pricing</a></li>
-        <li><a href="#feedback" class="nav-link px-4" v-smooth-scroll>Feedback</a></li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn me-2 text-theme">login</button>
-        <button type="button" class="btn btn-primary rounded-pill">
-          Sign up- It’s Free
-        </button>
-      </div>
-    </header>
-
+    </nav>
     <section class="py-lg-16 py-5 position-relative overflow-hidden">
       <div class="container position-relative zi-2">
         <div class="row align-items-center">
@@ -95,7 +112,6 @@
           </div>
         </div>
       </div>
-
       <div class="shape shape-bottom">
         <svg
           width="3000"
@@ -107,10 +123,8 @@
           <path d="M0 500H3000V0L0 500Z" fill="#fff"></path>
         </svg>
       </div>
-
     </section>
   </div>
-
   <section class="py-5" id="features">
     <div class="container">
       <div class="text-center mb-5">
@@ -206,13 +220,11 @@
       </div>
     </div>
   </section>
-
   <section class="bg-light rounded-2 mx-3 mx-lg-10 py-5">
     <div class="container content-space-2 content-space-lg-3">
       <div class="row">
         <div class="col-lg-7 mb-9 mb-lg-0">
           <div class="pe-lg-6">
-            <!-- Browser Device -->
             <figure class="device-browser">
               <div class="device-browser-header">
                 <div class="device-browser-header-btn-list">
@@ -220,11 +232,8 @@
                   <span class="device-browser-header-btn-list-btn"></span>
                   <span class="device-browser-header-btn-list-btn"></span>
                 </div>
-                <div class="device-browser-header-browser-bar">
-                  www.finding.lk
-                </div>
+                <div class="device-browser-header-browser-bar">www.finding.lk</div>
               </div>
-
               <div class="device-browser-frame">
                 <img
                   class="device-browser-img"
@@ -233,13 +242,9 @@
                 />
               </div>
             </figure>
-            <!-- End Browser Device -->
           </div>
         </div>
-        <!-- End Col -->
-
         <div class="col-lg-5 p-5">
-          <!-- Heading -->
           <div class="mb-4">
             <h1>
               Grow your business <br />
@@ -250,26 +255,16 @@
               and implementing the technology tools that they need to win.
             </p>
           </div>
-          <!-- End Heading -->
-
-          <!-- List Checked -->
           <ul class="list-checked list-checked-primary mb-5">
             <li class="list-checked-item">Less routine – more creativity</li>
             <li class="list-checked-item">Hundreds of thousands saved</li>
             <li class="list-checked-item">Scale budgets efficiently</li>
           </ul>
-          <!-- End List Checked -->
-
           <a class="btn btn-primary" href="#">Get started</a>
-
-          <!-- End Row -->
         </div>
-        <!-- End Col -->
       </div>
-      <!-- End Row -->
     </div>
   </section>
-
   <section class="container py-5 why-choose-us" id="whyus">
     <div class="row row-grid align-items-center">
       <div class="col-lg-4">
@@ -302,7 +297,6 @@
                   class="injected-svg svg-inject"
                   style="height: 64px; width: auto"
                 >
-                  <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
                   <title>Save_to_Cloud</title>
                   <desc>Created with Sketch.</desc>
                   <defs></defs>
@@ -923,7 +917,6 @@
       </div>
     </div>
   </section>
-
   <section class="py-5 bg-light" id="price">
     <div class="container">
       <div class="mb-5 text-center">
@@ -1015,7 +1008,6 @@
       </div>
     </div>
   </section>
-
   <section class="py-5" id="feedback">
     <div class="container">
       <div class="mb-5 text-center">
@@ -1046,8 +1038,6 @@
       </div>
     </div>
   </section>
-
-
   <footer class="pt-lg-10 pt-5 footer bg-white border-top">
     <div class="container">
       <div class="row">
@@ -1128,9 +1118,26 @@
   </footer>
 </template>
 
-<script setup>
+<script>
 import "bootstrap/dist/css/bootstrap.min.css";
 import Slider from "./components/Slider.vue";
+import { ref } from "vue";
+
+export default {
+  components: {
+    Slider
+  },
+  setup() {
+    const isMobileNavOpen = ref(false);
+    const toggleMobileNav = () => {
+      isMobileNavOpen.value = !isMobileNavOpen.value;
+    };
+    return {
+      isMobileNavOpen,
+      toggleMobileNav,
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -1153,8 +1160,8 @@ import Slider from "./components/Slider.vue";
   padding: 0.2rem 1rem;
 }
 
-header .nav-link {
- color: #6425fe;
+.navbar .nav-link {
+  color: #6425fe;
 }
 
 .btn-primary {
@@ -1255,7 +1262,7 @@ header .nav-link {
 
 .hero {
   /* background: #f8f9fa; */
-  background: rgba(246,240,253,1);
+  background: rgba(246, 240, 253, 1);
   /* background: linear-gradient(50deg, #fff 0, #6425fe 100%) !important; */
 }
 
@@ -1385,5 +1392,12 @@ header .nav-link {
 
 .hover-shadow-lg:hover {
   box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
