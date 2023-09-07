@@ -44,7 +44,7 @@
     <section class="py-lg-16 py-5 position-relative overflow-hidden">
       <div class="container position-relative zi-2">
         <div class="row align-items-center">
-          <div class="col-lg-6 mb-6 mb-lg-0">
+          <div class="col-lg-6 mb-6 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
             <div class="">
               <h5 class="text-dark mb-4">
                 <i
@@ -71,7 +71,7 @@
               >
             </div>
           </div>
-          <div class="col-lg-6 d-flex justify-content-center">
+          <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="position-relative">
               <img
                 src="https://geeksui.codescandy.com/geeks/assets/images/background/acedamy-img/bg-thumb.svg"
@@ -131,7 +131,7 @@
         <h2>Our Application Features.</h2>
       </div>
       <div class="row">
-        <div class="col-md-4 mb-7 feature-box p-5">
+        <div class="col-md-4 mb-7 feature-box p-5"  data-aos="fade-up">
           <div class="text-center px-lg-3">
             <span class="svg-icon svg-icon-lg mb-3">
               <svg
@@ -156,7 +156,7 @@
             <p>Achieve virtually any design and layout from within the one template.</p>
           </div>
         </div>
-        <div class="col-md-4 mb-7 feature-box p-5">
+        <div class="col-md-4 mb-7 feature-box p-5"  data-aos="fade-up">
           <div class="text-center px-lg-3">
             <span class="svg-icon svg-icon-lg text-primary mb-3">
               <svg
@@ -188,7 +188,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4 mb-7 feature-box p-5">
+        <div class="col-md-4 mb-7 feature-box p-5"  data-aos="fade-up">
           <div class="text-center px-lg-3">
             <span class="svg-icon svg-icon-lg text-primary mb-3">
               <svg
@@ -223,7 +223,7 @@
   <section class="bg-light rounded-2 mx-3 mx-lg-10 py-5">
     <div class="container content-space-2 content-space-lg-3">
       <div class="row">
-        <div class="col-lg-7 mb-9 mb-lg-0">
+        <div class="col-lg-7 mb-9 mb-lg-0" data-aos="fade-up">
           <div class="pe-lg-6">
             <figure class="device-browser">
               <div class="device-browser-header">
@@ -244,7 +244,7 @@
             </figure>
           </div>
         </div>
-        <div class="col-lg-5 p-5">
+        <div class="col-lg-5 p-5" data-aos="fade-up">
           <div class="mb-4">
             <h1>
               Grow your business <br />
@@ -260,7 +260,7 @@
             <li class="list-checked-item">Hundreds of thousands saved</li>
             <li class="list-checked-item">Scale budgets efficiently</li>
           </ul>
-          <a class="btn btn-primary" href="#">Get started</a>
+          <a class="btn btn-primary rounded-pill" href="#">Get started</a>
         </div>
       </div>
     </div>
@@ -285,7 +285,7 @@
       <div class="col-lg-7 ml-lg-auto">
         <div class="row">
           <div class="col-md-6">
-            <div class="card hover-shadow-lg">
+            <div class="card hover-shadow-lg" data-aos="zoom-in">
               <div class="px-4 py-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -432,7 +432,7 @@
                 </p>
               </div>
             </div>
-            <div class="card hover-shadow-lg">
+            <div class="card hover-shadow-lg" data-aos="zoom-in">
               <div class="px-4 py-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -668,7 +668,7 @@
             </div>
           </div>
           <div class="col-md-6 pt-lg-6 pt-4">
-            <div class="card hover-shadow-lg">
+            <div class="card hover-shadow-lg" data-aos="zoom-in">
               <div class="px-4 py-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -776,7 +776,7 @@
                 </p>
               </div>
             </div>
-            <div class="card hover-shadow-lg">
+            <div class="card hover-shadow-lg" data-aos="zoom-in">
               <div class="px-4 py-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -939,7 +939,7 @@
           </div>
         </div>
         <div class="pricing card-group flex-column flex-lg-row mb-3">
-          <div class="card card-pricing text-center px-3 mb-5 mb-lg-0 mx-2">
+          <div class="card card-pricing text-center px-3 mb-5 mb-lg-0 mx-2" data-aos="fade-up" data-aos-delay="100">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-theme text-white"
               >Starter</span
             >
@@ -955,14 +955,12 @@
                 <li>Monthly updates</li>
                 <li>Free cancelation</li>
               </ul>
-              <button type="button" class="btn btn-sm btn-neutral px-3 py-2">
+              <button type="button" class="btn btn-sm btn-neutral px-3 py-2 rounded-pill">
                 Order now
               </button>
             </div>
           </div>
-          <div
-            class="card card-pricing popular scale-110 text-center px-3 mb-5 mb-lg-0 mx-2"
-          >
+          <div class="card card-pricing popular scale-110 text-center px-3 mb-5 mb-lg-0 mx-2" data-aos="fade-up" data-aos-delay="150">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-theme text-white"
               >Professional</span
             >
@@ -978,12 +976,12 @@
                 <li>Monthly updates</li>
                 <li>Free cancelation</li>
               </ul>
-              <button type="button" class="btn btn-sm btn-neutral px-3 py-2">
+              <button type="button" class="btn btn-sm btn-neutral px-3 py-2  rounded-pill">
                 Order now
               </button>
             </div>
           </div>
-          <div class="card card-pricing text-center px-3 mb-5 mb-lg-0 mx-2">
+          <div class="card card-pricing text-center px-3 mb-5 mb-lg-0 mx-2" data-aos="fade-up" data-aos-delay="200">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-theme text-white"
               >Business</span
             >
@@ -999,7 +997,7 @@
                 <li>Monthly updates</li>
                 <li>Free cancelation</li>
               </ul>
-              <button type="button" class="btn btn-sm btn-neutral px-3 py-2">
+              <button type="button" class="btn btn-sm btn-neutral px-3 py-2  rounded-pill">
                 Order now
               </button>
             </div>
@@ -1008,7 +1006,7 @@
       </div>
     </div>
   </section>
-  <section class="py-5" id="feedback">
+  <section class="py-5" id="feedback" data-aos="fade-up">
     <div class="container">
       <div class="mb-5 text-center">
         <h1 class="mt-4">What our customers say</h1>
@@ -1120,8 +1118,10 @@
 
 <script>
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'aos/dist/aos.css'
 import Slider from "./components/Slider.vue";
-import { ref } from "vue";
+import { ref , onMounted} from "vue";
+import AOS from "aos";
 
 export default {
   components: {
@@ -1132,6 +1132,11 @@ export default {
     const toggleMobileNav = () => {
       isMobileNavOpen.value = !isMobileNavOpen.value;
     };
+
+    onMounted(() => {
+      AOS.init();
+    })
+
     return {
       isMobileNavOpen,
       toggleMobileNav,
@@ -1164,9 +1169,21 @@ export default {
   color: #6425fe;
 }
 
+.navbar .nav-link:hover {
+  color: #000;
+  border-bottom: 1px solid #6425fe;
+}
+
 .btn-primary {
   background: #6425fe;
+  border-color: #6425fe;
 }
+
+.btn-primary:hover {
+  background: #4a1999;
+  border-color: #4a1999;
+}
+
 
 .svg-icon {
   display: block;
